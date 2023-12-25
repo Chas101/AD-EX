@@ -27,50 +27,52 @@ Prerequisites:
 
 </p>
 
- 1. Ticket Creation: The lifecycle begins when a user submits a ticket, providing details about the issue or request they need assistance with.
-![image](https://github.com/Chas101/TL-EX/assets/153942150/320701ba-4b28-4b95-9167-2466f14ea6b1)
+1. Create Domain Controller VM (DC-1)
+
+Create a Windows Server 2022 VM named "DC-1" in Azure.
+Note the Resource Group and Virtual Network (Vnet) created for DC-1.
+Set the Domain Controller's NIC Private IP address to be static.
 
 
-<p>
+2. Create Client VM (Client-1)
 
+Create a Windows 10 VM named "Client-1" using the same Resource Group and Vnet as DC-1.
+Ensure that both VMs are in the same Vnet.
+
+
+
+
+
+3. Connectivity Setup
+
+Ensure connectivity between the client and Domain Controller.
+Login to Client-1 with Remote Desktop and ping DC-1’s private IP address.
+Enable ICMPv4 in the local Windows Firewall on DC-1 to allow ping.
+
+4. Install Active Directory on DC-1
+
+Install Active Directory Domain Services on DC-1.
+Promote DC-1 as a domain controller and set up a new forest (e.g., mydomain.com).
+Restart DC-1 and log back in as user: mydomain.com\labuser.
+
+5. Create Admin and Normal User Accounts in AD
+
+In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called "_EMPLOYEES" and another OU named "_ADMINS".
+Create a new employee named "Jane Doe" with the username "jane_admin" and add her to the "Domain Admins" Security Group.
+Logout and log back into DC-1 as "mydomain.com\jane_admin".
+
+
+6. Join Client-1 to the Domain
+
+Set Client-1's DNS settings to the DC's Private IP address from the Azure Portal.
+Restart Client-1 from the Azure Portal.
+Login to Client-1 using Remote Desktop as the original local admin (labuser) and join it to the domain.
+Verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the "Computers" container on the root of the domain.
+
+</p>
 <br />
 
 <p>
-
-</p>
-<p>
-
-2. Ticket Assignment: Once the ticket is created, it is assigned to a support agent or team responsible for addressing the specific type of issue or request.
-
- ![image](https://github.com/Chas101/TL-EX/assets/153942150/c75bbd76-f650-4dd1-b82c-4bb111cc2d4d)
-
-
-
-
- ![image](https://github.com/Chas101/TL-EX/assets/153942150/5b3384bd-ddbd-44d5-9a3c-8658b54cf634)
-
-
-3. Ticket Processing: The assigned support agent reviews the ticket, gathers necessary information, and begins working on a resolution or response.
-
-![image](https://github.com/Chas101/TL-EX/assets/153942150/43600cbe-37e0-4aa4-84ef-83938b9c4326)
-
-
-
-![image](https://github.com/Chas101/TL-EX/assets/153942150/e246bf3c-45ad-409f-8449-facc1fe83ad4)
-
-4. Ticket Resolution: The support agent resolves the issue or fulfills the request described in the ticket. This could involve providing a solution, answering a question, or completing a task.
-
-5. Ticket Closure: After the issue has been resolved or the request has been fulfilled, the ticket is marked as closed. This indicates that the support process for that particular issue is complete.
-
-![image](https://github.com/Chas101/TL-EX/assets/153942150/be95a155-b670-4e53-86f6-f224b8017968)
-
-
-Ticket Follow-up (Optional): In some cases, after the ticket is closed, there may be a follow-up process to ensure that the resolution provided meets the user's expectations or to gather feedback on the support experience.
-</p>
-<br />
-
-<p>
-
 
 </p>
 <p>
