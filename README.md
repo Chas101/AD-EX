@@ -98,6 +98,10 @@ Verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside t
 
 ![image](https://github.com/Chas101/AD-EX/assets/153942150/9453e640-0c39-46ff-9033-e93b1252c6d8)
 
+![image](https://github.com/Chas101/AD-EX/assets/153942150/e6f07078-ceca-455d-8aee-a76deb764767)
+
+
+
 </p>
 <br />
 
