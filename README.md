@@ -94,6 +94,9 @@ Restart Client-1 from the Azure Portal.
 Login to Client-1 using Remote Desktop as the original local admin (labuser) and join it to the domain.
 Verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the "Computers" container on the root of the domain.
 
+![image](https://github.com/Chas101/AD-EX/assets/153942150/2215b5c6-00ca-40ba-84d0-93a495b650a8)
+
+![image](https://github.com/Chas101/AD-EX/assets/153942150/9453e640-0c39-46ff-9033-e93b1252c6d8)
 
 </p>
 <br />
