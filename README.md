@@ -72,7 +72,7 @@ Restart DC-1 and log back in as user: mydomain.com\labuser.
 
 ![image](https://github.com/Chas101/AD-EX/assets/153942150/9ff5d3a6-d9bb-403c-abd2-4c88e6b9f381)
 
-![image](https://github.com/Chas101/AD-EX/assets/153942150/2f5d97a5-ff3d-4bdc-87b2-2950f710c5fd)
+![REDO](https://github.com/Chas101/AD-EX/assets/153942150/959658aa-25d3-48b8-9d9a-387dac391c3a)
 
 
 5. Create Admin and Normal User Accounts in AD
@@ -99,6 +99,10 @@ Verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside t
 ![image](https://github.com/Chas101/AD-EX/assets/153942150/9453e640-0c39-46ff-9033-e93b1252c6d8)
 
 ![image](https://github.com/Chas101/AD-EX/assets/153942150/e6f07078-ceca-455d-8aee-a76deb764767)
+
+![1st picture](https://github.com/Chas101/AD-EX/assets/153942150/ffc2aa21-8644-4b88-bf06-00956d354a13)
+
+![2nd picture](https://github.com/Chas101/AD-EX/assets/153942150/53412076-8959-4174-9044-468297f89b5e)
 
 
 
